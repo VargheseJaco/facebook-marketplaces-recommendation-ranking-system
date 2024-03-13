@@ -1,7 +1,7 @@
 # Facebook Marketplace Recommendation Ranking System
 
 ## Description:
-Key technologies used: Python, Pandas
+Key technologies used: Python, Pandas, PIL
 
 Facebook Marketplace is a platform for buying and selling products on Facebook.
 
