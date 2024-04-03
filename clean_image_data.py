@@ -33,6 +33,7 @@ def avg_size(path:str):
 
     return avg_size 
 
+
 def resize_image(final_size, im):
     """
     Resizes images into a square image of specified width
@@ -70,10 +71,11 @@ if __name__ == '__main__':
     make_folder("cleaned_images")
     path = "EC2_files/images"
     dirs = os.listdir(path)
-    final_size = max(avg_size('EC2_files/images'))
+    final_size = 224
     for n, item in enumerate(dirs, 1):
         im = Image.open('EC2_files/images/' + item)
         new_im = resize_image(final_size, im)
-        new_im.save(f'cleaned_images/{n}_resized.jpg')
+        new_im.save(f'cleaned_images/{item}')
+
 
 # %%
